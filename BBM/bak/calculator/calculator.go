@@ -237,6 +237,7 @@ func evaluatePostfix(postfix []string) (*big.Float, error) {
 			default:
 				return nil, fmt.Errorf("unknown operator: %s", token)
 			}
+			stack = append(stack, result)
 		} else {
 			return nil, fmt.Errorf("invalid token: %s", token)
 		}
