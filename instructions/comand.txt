@@ -1,5 +1,0 @@
-билд
-docker build -t bbm-bot .
-
-запуск
-docker run --rm --env-file .env bbm-bot
